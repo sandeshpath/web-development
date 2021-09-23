@@ -13,22 +13,48 @@
       margin-top: 4px;
 
     }
-    div.parent div:nth-child(2){
+    h2{
+      padding: 5px;
+      color: #f1f1f2;
+      background-color: #ffbd00;
+    }
+    h2:hover{
       background-color: tomato;
-    }  
+      cursor: pointer;
+
+    }
+    div::selection{
+      background-color: teal;
+    }
+    input:focus{
+      background-color:thistle;
+      color: tomato;
+      font-size: 2rem;
+    }
+    h2::after{
+      content: "a am after";
+      font-size: 1rem;
+      color: red;
+      position: relative;
+
+    }
+    h2::before{
+      content: "a am before";
+font-size: 1rem;
+color: red;
+position: relative;
+
+    }
   </style>
+
 
 </head>
 
 <body>
-  <div class="parent">
-    <div> i am first div</div>
-    <div> i am  second div</div>
-    <div> i am  third div</div>
-     
+  <h2> i am heading</h2>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, consectetur magni? Earum quas magnam itaque error at iusto rem ab officiis eum consequuntur. Repudiandae fugiat est tempora sed excepturi repellat.</div>
+  <input type="text"/>
 
-    <!-- all div are selected in this "div.parent div{}""  -->
-  </div>
 </body>
 
 </html>
