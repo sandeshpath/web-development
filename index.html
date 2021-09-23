@@ -12,31 +12,37 @@
       box-sizing: border-box;
 
     }
-    .parent{
-      min-height: 900px;
-      background-color: #000000;
-      position: relative;
-      display: flex;
-      flex-direction:row;
-      justify-content: center;
-      align-items: center;
+    .background{
+      color: white;
+      margin: 20px;
+
     }
+    h1.background{
+      background-color: darkblue;
+    }
+    h2.background{
+      background-color: darkred;
+    }
+    h3.background{
+      background-color: deeppink;
+    }
+    span.background{
+      background-color: dimgray;
+      
+    }
+
   
-    .child{
-      width: 100px;
-      height: 150px;
-      background: burlywood;
-      margin: 10px;
-    }
   </style>
 
 </head>
-<div class="parent">
-  <div style="background-color: crimson;" class="child"></div>
-  <div style="background-color: cyan;" class="child"></div>
-  <div class="child"></div>
-</div>
+
 <body>
+  <h1 class="background" > Heading one </h1>
+  <h2 class="background"> Heading two </h2>
+  <h3 class="background"> Heading three </h3>
+
+  <span class="background"> I am span</span>
+  
 </body>
 
 </html>
