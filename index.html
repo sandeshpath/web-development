@@ -10,39 +10,25 @@
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+      margin-top: 4px;
 
     }
-    .background{
-      color: white;
-      margin: 20px;
-
-    }
-    h1.background{
-      background-color: darkblue;
-    }
-    h2.background{
-      background-color: darkred;
-    }
-    h3.background{
-      background-color: deeppink;
-    }
-    span.background{
-      background-color: dimgray;
-      
-    }
-
-  
+    div.parent div:nth-child(2){
+      background-color: tomato;
+    }  
   </style>
 
 </head>
 
 <body>
-  <h1 class="background" > Heading one </h1>
-  <h2 class="background"> Heading two </h2>
-  <h3 class="background"> Heading three </h3>
+  <div class="parent">
+    <div> i am first div</div>
+    <div> i am  second div</div>
+    <div> i am  third div</div>
+     
 
-  <span class="background"> I am span</span>
-  
+    <!-- all div are selected in this "div.parent div{}""  -->
+  </div>
 </body>
 
 </html>
