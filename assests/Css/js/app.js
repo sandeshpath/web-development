@@ -1,13 +1,14 @@
-var heading = document.getElementById('heading')
-var body = document.querySelector('body')
-console.log('heading')
+var list = document.querySelector('ul')
 
-heading.innerHTML = " i was added 35"
-heading.style = "color:red;font-size:2rem"
 
-heading.classList.add('five')
-heading.classList.remove('one')
-console.log(heading.classList)
+var arr = ['Go to Gym','cook oatmeal','eat']
 
-body.classList.add('dark')
-body.classList.remove('dark')
+arr.push('completed task')
+
+for(var i=0; i<arr.length; i++) {
+  var element = document.createElement('li')
+  var texNode = document.createTextNode(arr[i])
+  element.appendChild(texNode)
+  console.log(texNode)
+  list.appendChild(element)
+}
