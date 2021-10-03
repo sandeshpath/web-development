@@ -1,15 +1,13 @@
 var heading = document.getElementById('heading')
-//heading.innerHTML ="Hi from i am java"
+var body = document.querySelector('body')
+console.log('heading')
 
-//console.log(heading)
+heading.innerHTML = " i was added 35"
+heading.style = "color:red;font-size:2rem"
 
-var para = document.getElementsByClassName('para')
-//console.log(para.length)
-//console.log(para[0])// selecting one element 
-//console.log(para[1])
+heading.classList.add('five')
+heading.classList.remove('one')
+console.log(heading.classList)
 
-var tags = document.getElementsByTagName('a')
-console.log(tags)
-
-var query = document.querySelector('#heading')
-console.log(query)
+body.classList.add('dark')
+body.classList.remove('dark')
