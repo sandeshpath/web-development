@@ -1,21 +1,59 @@
-// Array
-//array are not generic 
-// it is move by top to bottom
+// Arthmetic operators
 
-var arr = [ 1,2,3,4,'sandesh']
+var a = 20
+var b = 10
+   
 
-arr.push(6)
 
-console.log(arr)
-console.log(typeof arr)
-console.log( arr.length)
+console.log('a+b=',a+b)
+console.log('a-b=',-b)
+console.log('a/b=',a/b)
+console.log('a*b=',a*b)
+console.log('a**b=',a**b) //power operator
+console.log('a%b=',a%b)
 
-// change the vale of variable
-var age = 10
-age = 20
-console.log(age)
+//Assignment Operators
 
-//you can not change the value then use constant
-const age =15
-age = 12
-console.log(age)
+b = 13
+console.log('b ',b)
+b+= 10
+console.log('b+=',b)
+b++
+console.log("b++",b)
+
+//Comparison Operators
+
+
+var d = 10
+var e =2
+var f='10'
+
+console.log(d>e)
+
+console.log(d<e)
+console.log(d==e)
+
+console.log(d>=e)
+
+console.log(d<=e)
+
+
+console.log(d==f)
+console.log(d===f)
+console.warn( d + f)
+
+// Logical operator
+// and operator
+console.log( "true && true=",true && true)
+console.log( "false && true=",false && true)
+console.log( "true && false=",true && false)
+console.log( "false && false=",false && false)
+//or operator
+console.log( "true && true=",true ||true)
+console.log( "false && true=",false || true)
+console.log( "true && false=",true || false)
+console.log( "false && false=",false || false)
+
+
+
+
